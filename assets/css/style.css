@@ -1,0 +1,135 @@
+*{
+  font-family: poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(45deg, #ffffff00, #e0e0e000, #A4A4A4);
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    padding: 0px 25px;
+}
+
+h1{
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.put-task{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#input-task{
+    flex-grow: 1;
+    padding: 8px 15px;
+    font-size: 16px;
+    color: #4b4b4b;
+    font-weight: 600;
+    border: solid 1px black;
+    border-radius: 8px;
+    background-color: #D9D9D9;
+}
+
+.btn-add{
+    background-color: black;
+    color: white;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.task-area{
+    border: solid 1px black;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.sub-tittle h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.task{
+    background-color: black;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    padding: 10px 15px;
+    gap: 12px;
+    list-style: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.checkbox-task{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-name{
+    color: white;
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn-delete{
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+}
+
+img{
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.task.completed .task-name {
+    text-decoration: line-through; 
+    color: #888; 
+}
+
+.checkbox-task:checked {
+    background-color: #555;
+}
+
+.checkbox-task:checked::before {
+    content: ''; 
+    display: block;
+    width: 12px;
+    height: 12px; 
+    background-color: white;
+    border-radius: 50%; 
+}
